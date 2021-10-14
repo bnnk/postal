@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 gem 'rails', '= 5.2.4.3'
 gem 'mysql2'
-gem 'puma'
+gem 'puma', '>= 4.3.9'
 gem 'turbolinks', '~> 5'
 gem 'haml'
 gem 'nifty-utils'
