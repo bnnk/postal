@@ -1,40 +1,40 @@
 source 'https://rubygems.org'
-gem 'rails', '= 5.2.4.3'
+gem 'rails', '= 7.1.0'
 gem 'mysql2'
 gem 'puma'
 gem 'turbolinks', '~> 5'
 gem 'haml'
 gem 'nifty-utils'
-gem 'nilify_blanks'
-gem 'kaminari'
+gem 'nilify_blanks', '>= 1.4.0'
+gem 'kaminari', '>= 1.2.2'
 gem 'bcrypt'
 gem 'foreman'
 gem 'hashie'
 gem 'authie', '~> 3.0'
 gem 'dynamic_form'
-gem 'changey'
+gem 'changey', '>= 1.1.0'
 gem 'mail', :git => 'https://github.com/mikel/mail.git', :branch => '2-7-stable'
 gem 'autoprefixer-rails'
 gem 'bunny'
 gem 'secure_headers'
 gem 'chronic'
 gem 'basic_ssl'
-gem 'clockwork'
+gem 'clockwork', '>= 2.0.4'
 gem 'encrypto_signo'
 gem 'nio4r'
 gem 'mongo'
 gem 'sentry-raven'
-gem 'gelf'
-gem 'moonrope'
+gem 'gelf', '>= 3.1.0'
+gem 'moonrope', '>= 2.0.2'
 gem 'jwt'
 gem 'acme-client'
 gem 'highline', :require => false
 
 group :development, :assets do
-  gem 'sass-rails', '~> 5.0'
+  gem 'sass-rails', '~> 6.0', '>= 6.0.0'
   gem 'uglifier', '>= 1.3.0'
-  gem 'coffee-rails', '~> 4.2'
-  gem 'jquery-rails'
+  gem 'coffee-rails', '~> 5.0', '>= 5.0.0'
+  gem 'jquery-rails', '>= 4.3.4'
 end
 
 group :development, :test do
@@ -42,9 +42,9 @@ group :development, :test do
 end
 
 group :development do
-  gem 'annotate'
+  gem 'annotate', '>= 2.7.5'
   gem 'rspec'
-  gem 'rspec-rails'
-  gem "factory_bot_rails", "~> 4.0"
+  gem 'rspec-rails', '>= 3.8.1'
+  gem "factory_bot_rails", "~> 5.0", ">= 5.0.0"
   gem "database_cleaner"
 end
