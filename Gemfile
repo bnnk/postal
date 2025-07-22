@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'rails', '= 5.2.4.3'
+gem 'rails', '= 5.2.4.4'
 gem 'mysql2'
 gem 'puma'
 gem 'turbolinks', '~> 5'
@@ -8,7 +8,7 @@ gem 'nifty-utils'
 gem 'nilify_blanks'
 gem 'kaminari'
 gem 'bcrypt'
-gem 'foreman'
+gem 'foreman', '>= 0.86.0'
 gem 'hashie'
 gem 'authie', '~> 3.0'
 gem 'dynamic_form'
@@ -31,10 +31,10 @@ gem 'acme-client'
 gem 'highline', :require => false
 
 group :development, :assets do
-  gem 'sass-rails', '~> 5.0'
+  gem 'sass-rails', '~> 5.0', '>= 5.0.8'
   gem 'uglifier', '>= 1.3.0'
-  gem 'coffee-rails', '~> 4.2'
-  gem 'jquery-rails'
+  gem 'coffee-rails', '~> 5.0', '>= 5.0.0'
+  gem 'jquery-rails', '>= 4.3.4'
 end
 
 group :development, :test do
@@ -44,7 +44,7 @@ end
 group :development do
   gem 'annotate'
   gem 'rspec'
-  gem 'rspec-rails'
-  gem "factory_bot_rails", "~> 4.0"
+  gem 'rspec-rails', '>= 3.8.1'
+  gem "factory_bot_rails", "~> 5.0", ">= 5.0.0"
   gem "database_cleaner"
 end
