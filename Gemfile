@@ -23,11 +23,11 @@ gem 'clockwork'
 gem 'encrypto_signo'
 gem 'nio4r'
 gem 'mongo'
-gem 'sentry-raven'
+gem 'sentry-raven', '>= 3.0.0'
 gem 'gelf'
 gem 'moonrope'
 gem 'jwt'
-gem 'acme-client'
+gem 'acme-client', '>= 2.0.10'
 gem 'highline', :require => false
 
 group :development, :assets do
